@@ -25,15 +25,25 @@ else {
 }
 
 // string
+var player = "B'jorka";
+var player1 = 'B\'jorka';
+var player2 = `B'jorka`;
+//var player3 = 'B''jorka'; wrong
 
+console.log(player);
+console.log(player1);
+console.log(player2);
+//console.log(player3);
 // object
 var lspham = {firstname: "Loc", lastname: "Pham"};
 var book = {name: "java", author: lspham};
 console.log(book.name);
-console.log(book.price);
+//console.log(book.price);
+console.log("name is " + book['name']);
 
 book.price  = 100;
 
 console.log(book.price);
+console.log(book);
 lspham.firstname = "Loc Son"
 console.log(book.author);

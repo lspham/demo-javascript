@@ -27,6 +27,8 @@ function fact (n) {
 	}
 
 	if (n === parseInt(n)) {
+		// stop condition
+		// if not => stack overflow
 		if (n <= 1) {
 			return 1;
 		} else {
